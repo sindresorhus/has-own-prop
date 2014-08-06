@@ -1,0 +1,31 @@
+{
+  "name": "has-own-prop",
+  "version": "0.0.0",
+  "description": "A safer `.hasOwnProperty()`",
+  "license": "MIT",
+  "repository": "sindresorhus/has-own-prop",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "object",
+    "has",
+    "own",
+    "property",
+    "prop"
+  ],
+  "devDependencies": {
+    "ava": "0.0.3"
+  }
+}
