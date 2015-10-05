@@ -9,7 +9,7 @@ You shouldn't use `.hasOwnProperty()` as it won't exist on objects [created with
 
 ## Install
 
-```sh
+```
 $ npm install --save has-own-prop
 ```
 
@@ -17,13 +17,13 @@ $ npm install --save has-own-prop
 ## Usage
 
 ```js
-var hasOwnProp = require('has-own-prop');
+const hasOwnProp = require('has-own-prop');
 
-var obj = Object.create(null);
+const obj = Object.create(null);
 obj.unicorn = true;
 
 obj.hasOwnProperty('unicorn');
-//=> TypeError: undefined is not a function
+//=> 'TypeError: undefined is not a function'
 
 hasOwnProp(obj, 'unicorn');
 //=> true
