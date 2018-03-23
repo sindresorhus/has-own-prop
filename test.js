@@ -1,7 +1,7 @@
-'use strict';
-var test = require('ava');
-var hasOwnProp = require('./');
+import test from 'ava';
+import m from '.';
 
-test(function (t) {
-	t.assert(hasOwnProp({foo: true}, 'foo'));
+test('main', t => {
+	t.true(m({foo: true}, 'foo'));
+	t.false(m({foo: true}, 'bar'));
 });

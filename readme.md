@@ -2,15 +2,15 @@
 
 > A safer `.hasOwnProperty()`
 
-Shortcut for `Object.prototype.hasOwnProperty.call(obj, prop)`.
+Shortcut for `Object.prototype.hasOwnProperty.call(object, property)`.
 
-You shouldn't use `.hasOwnProperty()` as it won't exist on objects [created with `Object.create(null)`](http://stackoverflow.com/a/12017703/64949) or it can have been overridden.
+You shouldn't use `.hasOwnProperty()` as it won't exist on objects [created with `Object.create(null)`](https://stackoverflow.com/a/12017703/64949) or it can have been overridden.
 
 
 ## Install
 
 ```
-$ npm install --save has-own-prop
+$ npm install has-own-prop
 ```
 
 
@@ -19,17 +19,17 @@ $ npm install --save has-own-prop
 ```js
 const hasOwnProp = require('has-own-prop');
 
-const obj = Object.create(null);
-obj.unicorn = true;
+const object = Object.create(null);
+object.unicorn = true;
 
-obj.hasOwnProperty('unicorn');
+object.hasOwnProperty('unicorn');
 //=> 'TypeError: undefined is not a function'
 
-hasOwnProp(obj, 'unicorn');
+hasOwnProp(object, 'unicorn');
 //=> true
 ```
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

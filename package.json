@@ -1,31 +1,32 @@
 {
-  "name": "has-own-prop",
-  "version": "1.0.1",
-  "description": "A safer `.hasOwnProperty()`",
-  "license": "MIT",
-  "repository": "sindresorhus/has-own-prop",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "node test.js"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "object",
-    "has",
-    "own",
-    "property",
-    "prop"
-  ],
-  "devDependencies": {
-    "ava": "0.0.3"
-  }
+	"name": "has-own-prop",
+	"version": "1.0.1",
+	"description": "A safer `.hasOwnProperty()`",
+	"license": "MIT",
+	"repository": "sindresorhus/has-own-prop",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"object",
+		"has",
+		"own",
+		"property",
+		"prop"
+	],
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }
