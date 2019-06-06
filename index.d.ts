@@ -12,6 +12,6 @@ hasOwnProp([1, 2, 3], 0);
 //=> true
 ```
 */
-declare function hasOwnProp(object: any, key: string | number | symbol): boolean;
+declare function hasOwnProp(object: unknown, key: string | number | symbol): boolean;
 
 export = hasOwnProp;
