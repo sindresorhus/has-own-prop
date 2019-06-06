@@ -13,10 +13,11 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava && tsd"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"keywords": [
 		"object",
@@ -27,6 +28,7 @@
 	],
 	"devDependencies": {
 		"ava": "*",
+		"tsd": "*",
 		"xo": "*"
 	}
 }
