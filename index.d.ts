@@ -1,5 +1,5 @@
 /**
-A safer .hasOwnProperty()
+Shortcut for `Object.prototype.hasOwnProperty.call(object, property)`.
 
 @example
 ```
