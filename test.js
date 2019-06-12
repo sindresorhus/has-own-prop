@@ -1,7 +1,7 @@
 import test from 'ava';
-import m from '.';
+import hasOwnProp from '.';
 
 test('main', t => {
-	t.true(m({foo: true}, 'foo'));
-	t.false(m({foo: true}, 'bar'));
+	t.true(hasOwnProp({foo: true}, 'foo'));
+	t.false(hasOwnProp({foo: true}, 'bar'));
 });

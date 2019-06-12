@@ -4,7 +4,7 @@
 
 Shortcut for `Object.prototype.hasOwnProperty.call(object, property)`.
 
-You shouldn't use `.hasOwnProperty()` as it won't exist on objects [created with `Object.create(null)`](https://stackoverflow.com/a/12017703/64949) or it can have been overridden.
+You shouldn't use `.hasOwnProperty()` as it won't exist on [objects created with `Object.create(null)`](https://stackoverflow.com/a/12017703/64949) or it can have been overridden.
 
 
 ## Install
@@ -28,8 +28,3 @@ object.hasOwnProperty('unicorn');
 hasOwnProp(object, 'unicorn');
 //=> true
 ```
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
