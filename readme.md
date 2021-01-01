@@ -1,4 +1,4 @@
-# has-own-prop [![Build Status](https://travis-ci.org/sindresorhus/has-own-prop.svg?branch=master)](https://travis-ci.org/sindresorhus/has-own-prop)
+# has-own-prop
 
 > A safer `.hasOwnProperty()`
 
