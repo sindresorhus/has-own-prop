@@ -3,15 +3,13 @@ Shortcut for `Object.prototype.hasOwnProperty.call(object, property)`.
 
 @example
 ```
-import hasOwnProp = require('has-own-prop');
+import hasOwnProperty from 'has-own-prop';
 
-hasOwnProp({}, 'hello');
+hasOwnProperty({}, 'hello');
 //=> false
 
-hasOwnProp([1, 2, 3], 0);
+hasOwnProperty([1, 2, 3], 0);
 //=> true
 ```
 */
-declare function hasOwnProp(object: unknown, key: string | number | symbol): boolean;
-
-export = hasOwnProp;
+export default function hasOwnProperty(object: unknown, key: string | number | symbol): boolean;

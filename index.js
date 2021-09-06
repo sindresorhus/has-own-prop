@@ -1,4 +1,5 @@
-'use strict';
-const hasOwnProp = Object.prototype.hasOwnProperty;
+const has = Object.prototype.hasOwnProperty;
 
-module.exports = (object, property) => hasOwnProp.call(object, property);
+export default function hasOwnProperty(object, property) {
+	return has.call(object, property);
+}

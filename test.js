@@ -1,7 +1,7 @@
 import test from 'ava';
-import hasOwnProp from '.';
+import hasOwnProperty from './index.js';
 
 test('main', t => {
-	t.true(hasOwnProp({foo: true}, 'foo'));
-	t.false(hasOwnProp({foo: true}, 'bar'));
+	t.true(hasOwnProperty({foo: true}, 'foo'));
+	t.false(hasOwnProperty({foo: true}, 'bar'));
 });

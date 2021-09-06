@@ -1,6 +1,6 @@
 import {expectType} from 'tsd';
-import hasOwnProp = require('.');
+import hasOwnProperty from './index.js';
 
-expectType<boolean>(hasOwnProp({}, 'hello'));
-expectType<boolean>(hasOwnProp([1, 2, 3], 0));
-expectType<boolean>(hasOwnProp('foo', Symbol('bar')));
+expectType<boolean>(hasOwnProperty({}, 'hello'));
+expectType<boolean>(hasOwnProperty([1, 2, 3], 0));
+expectType<boolean>(hasOwnProperty('foo', Symbol('bar')));
