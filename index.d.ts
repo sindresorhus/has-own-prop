@@ -12,4 +12,4 @@ hasOwnProperty([1, 2, 3], 0);
 //=> true
 ```
 */
-export default function hasOwnProperty(object: unknown, key: string | number | symbol): boolean;
+export default function hasOwnProperty(object: unknown, key: PropertyKey): boolean;
