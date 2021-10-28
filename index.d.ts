@@ -12,4 +12,7 @@ hasOwnProperty([1, 2, 3], 0);
 //=> true
 ```
 */
-export default function hasOwnProperty(object: unknown, key: PropertyKey): boolean;
+export default function hasOwnProperty<ObjectType, Key extends PropertyKey>(
+	object: ObjectType,
+	key: Key,
+): object is (ObjectType & Record<Key, unknown>);
