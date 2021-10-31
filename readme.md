@@ -2,7 +2,7 @@
 
 > A safer `.hasOwnProperty()`
 
-Shortcut for `Object.prototype.hasOwnProperty.call(object, property)`. Also returns a type predicate for assertions.
+Shortcut for `Object.prototype.hasOwnProperty.call(object, property)`. Also comes with a type guard for TypeScript users.
 
 You shouldn't use `.hasOwnProperty()` as it won't exist on [objects created with `Object.create(null)`](https://stackoverflow.com/a/12017703/64949) or it can have been overridden.
 
